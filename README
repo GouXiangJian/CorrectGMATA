@@ -1,0 +1,27 @@
+Author
+======
+
+Xiang-jian Gou (xjgou@stu.sicau.edu.cn)
+
+Introduction
+============
+
+'CorrectGMATA.pl' can correct the output of GMATA
+
+Input
+=====
+
+you should provide a motif type and five files for input, including : 
+    1. motif type (can also be any character)
+    2. frg file   (GMATA output)
+    3. emap file  (GMATA output)
+    4. mk file    (GMATA output)
+    5. genome file
+    6. ssr file   (GMATA output)
+
+Output
+======
+
+the output file is based on the 'ssr' file, but add 2 more columns, including :
+    1. column 'old' : previous  marker class (value 'poly' = polymorphic, 'mono' = monomorphic)
+    2. column 'new' : now(true) marker class (value 'poly' = polymorphic, 'mono' = monomorphic, 'be-filtered' = no target SSR in PCR product)
